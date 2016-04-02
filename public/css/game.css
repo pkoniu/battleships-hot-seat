@@ -13,3 +13,7 @@ table, td, tr {
     float: right;
     display: inline;
 }
+
+td:hover {
+    background-color: aqua;
+}

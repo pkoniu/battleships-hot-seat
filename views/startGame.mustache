@@ -8,127 +8,507 @@
     <link rel="stylesheet" href="css/game.css"/>
   </head>
   <body>
-    <table>
-        <tr data-row="1">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="2">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="3">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="4">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="5">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="6">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="7">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="8">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="9">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-        <tr data-row="10">
-            <td data-column="1"></td>
-            <td data-column="2"></td>
-            <td data-column="3"></td>
-            <td data-column="4"></td>
-            <td data-column="5"></td>
-            <td data-column="6"></td>
-            <td data-column="7"></td>
-            <td data-column="8"></td>
-            <td data-column="9"></td>
-            <td data-column="10"></td>
-        </tr>
-    </table>
+  <div class="game-board" id="player-one">
+      <div class="ships">
+          <table>
+              <tr data-row="1">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="2">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="3">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="4">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="5">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="6">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="7">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="8">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="9">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="10">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+          </table>
+      </div>
+      <div class="shots">
+          <table>
+              <tr data-row="1">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="2">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="3">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="4">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="5">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="6">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="7">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="8">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="9">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="10">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+
+  <div class="game-board" id="player-two">
+      <div class="ships">
+          <table>
+              <tr data-row="1">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="2">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="3">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="4">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="5">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="6">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="7">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="8">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="9">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="10">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+          </table>
+      </div>
+      <div class="shots">
+          <table>
+              <tr data-row="1">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="2">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="3">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="4">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="5">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="6">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="7">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="8">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="9">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+              <tr data-row="10">
+                  <td data-column="1"></td>
+                  <td data-column="2"></td>
+                  <td data-column="3"></td>
+                  <td data-column="4"></td>
+                  <td data-column="5"></td>
+                  <td data-column="6"></td>
+                  <td data-column="7"></td>
+                  <td data-column="8"></td>
+                  <td data-column="9"></td>
+                  <td data-column="10"></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+
   </body>
 </html>

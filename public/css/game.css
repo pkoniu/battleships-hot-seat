@@ -3,3 +3,13 @@ table, td, tr {
     border-collapse: collapse;
     padding: 20px;
 }
+
+.game-board#player-one {
+    float: left;
+    display: inline;
+}
+
+.game-board#player-two {
+    float: right;
+    display: inline;
+}

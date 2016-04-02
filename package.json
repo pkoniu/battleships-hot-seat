@@ -1,0 +1,19 @@
+{
+  "name": "battleships_single",
+  "version": "1.0.0",
+  "description": "Single player version of battleships",
+  "main": "main.js",
+  "scripts": {
+    "start": "export PORT=8080 && node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "battleships",
+    "singleplayer"
+  ],
+  "author": "Patryk Konior",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

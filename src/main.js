@@ -1,4 +1,7 @@
-'use strict'
+'use strict';
+
+console.log("@@@@@@@", process.env.NON_SECRET_KEY);
+console.log("#######", process.env.SECRET_KEY);
 
 let app = require('./app')();
 
